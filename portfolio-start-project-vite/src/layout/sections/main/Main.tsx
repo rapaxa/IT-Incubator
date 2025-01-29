@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import photo from "../../../assets/images/Photo.webp";
+import {SectionTitles} from "../../../components/SectionTitles.tsx";
+import {Container} from "../../../App.tsx";
 
 interface SquareProps {
     $rotation: number;
@@ -7,13 +9,12 @@ interface SquareProps {
 
 export const Main = () => {
     return (
+        <Container>
         <MainStyled>
-            <DescriptionStyled>
-                <TitleStyle>Hi 👋,<br/>My name is<br/>
+                <SectionTitles as = "h1">Hi 👋,<br/>My name is<br/>
                     <NameStyled>Pavlo MG</NameStyled>
                     <br/>I'm web developer
-                </TitleStyle>
-            </DescriptionStyled>
+                </SectionTitles>
             <PhotoBorder>
                 <Square $rotation={0}/>
                 <Square $rotation={30}/>
@@ -23,6 +24,7 @@ export const Main = () => {
                 <Photo src={photo} alt=""/>
             </PhotoBorder>
         </MainStyled>
+        </Container>
     )
 }
 
@@ -37,20 +39,12 @@ const Photo = styled.img`
 
 `
 
-const TitleStyle = styled.span`
-    color: #42446E`
-
 const NameStyled = styled.span`
     background: ${({theme}) => theme.gradient.nameGradient};
     -webkit-background-clip: text;
     color: transparent;
 `
 
-const DescriptionStyled = styled.div`
-    color: #42446E;
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.625rem;
-    font-weight: 700;`
 
 const PhotoBorder = styled.div`
     display: flex;
