@@ -21,7 +21,7 @@ const HeaderStyle = styled.header`
     transform: translateX(-50%);
     width: 100%;
     max-width: 1240px;
-    height: 80px;
+    height: 10vh;
     background: white;
     z-index: 1000;
 `;

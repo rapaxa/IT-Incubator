@@ -1,5 +1,5 @@
-import {Profile} from "../Profile.tsx";
 import {ListOfItems} from "../../../../components/ListOfItems.tsx";
+import {SectionTitles} from "../../../../components/SectionTitles.tsx";
 
 const jobData = [
     {
@@ -25,12 +25,11 @@ const jobData = [
     }
 ];
 
-export const WorkExperience = () =>{
+export const WorkExperience = () => {
     return (
         <>
-            <Profile title={"Work Experience"} description={""}></Profile>
+            <SectionTitles>Work Experience</SectionTitles>
             <ListOfItems data={jobData}/>
-
         </>
 
     )

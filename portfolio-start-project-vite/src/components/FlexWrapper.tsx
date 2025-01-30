@@ -1,10 +1,6 @@
 import styled from "styled-components";
-type FlexWrapperPropsType = {
-    $alignI?: "flex-start" | "flex-end" | "center" | "space-between" | "space-around";
-    $justifyC?: "flex-start" | "flex-end" | "center" | "space-between" | "space-around";
-    $flexD?: "column" | "row";
-    $flexWrap?: "wrap" | "wrap-reverse" | "no-wrap";
-}
+import {FlexWrapperPropsType} from "../types/styles/flexWrapperStyled.ts";
+
 
 export const FlexWrapperStyled = styled.div<FlexWrapperPropsType>`
     display: flex;

@@ -1,13 +1,9 @@
 import styled from "styled-components";
 import {FlexWrapperStyled} from "../../../../components/FlexWrapper.tsx";
 import {Icon} from "../../../../components/icons/Icon.tsx";
+import {TechStackItemPropsType} from "../../../../types/techStack.ts";
 
-type TechStackItemPropsType = {
-    name: string,
-    width: string | "92",
-    height: string | "105",
-    viewBox: string | "0 0 92 105",
-}
+
 export const TechStackItems = ({dataItems}: { dataItems: TechStackItemPropsType[] }) => {
     return (
         <FlexWrapperStyled $alignI={"center"}>
@@ -27,7 +23,7 @@ const StyledTechStackItems = styled.ul`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 116px;
+    gap: 7.25rem;
     padding: 0;
 `
 const StyledTechStackItem = styled.li`

@@ -5,9 +5,9 @@ export const SectionTitles = styled.h2`
 
     return `
       font-family: ${family};
-      font-size: ${size || '42px'};
+      font-size: ${size || '2.625rem'};
       font-weight: ${weight || 700};
-      line-height: ${height || '52px'};
+      line-height: ${height || '3.25rem'};
       text-align: ${align || 'left'};
       color: ${color || '#42446E'};
     `;

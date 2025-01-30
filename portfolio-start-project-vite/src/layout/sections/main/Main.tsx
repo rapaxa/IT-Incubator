@@ -1,29 +1,28 @@
 import styled from "styled-components";
 import photo from "../../../assets/images/Photo.webp";
 import {SectionTitles} from "../../../components/SectionTitles.tsx";
-import {Container} from "../../../App.tsx";
+import {Container} from "../../../components/Container.tsx";
+import {SquareProps} from "../../../types/styles/abstract/square.ts";
+import {StyledSpan} from "../../../components/StyledSpan.tsx";
 
-interface SquareProps {
-    $rotation: number;
-}
 
 export const Main = () => {
     return (
         <Container>
-        <MainStyled>
-                <SectionTitles as = "h1">Hi 👋,<br/>My name is<br/>
-                    <NameStyled>Pavlo MG</NameStyled>
+            <MainStyled>
+                <SectionTitles as="h1">Hi 👋,<br/>My name is<br/>
+                    <StyledSpan>Pavlo MG</StyledSpan>
                     <br/>I'm web developer
                 </SectionTitles>
-            <PhotoBorder>
-                <Square $rotation={0}/>
-                <Square $rotation={30}/>
-                <Square $rotation={60}/>
-                <Square $rotation={90}/>
-                <Square $rotation={120}/>
-                <Photo src={photo} alt=""/>
-            </PhotoBorder>
-        </MainStyled>
+                <PhotoBorder>
+                    <Square $rotation={10}/>
+                    <Square $rotation={20}/>
+                    <Square $rotation={30}/>
+                    <Square $rotation={40}/>
+                    <Square $rotation={50}/>
+                    <Photo src={photo} alt=""/>
+                </PhotoBorder>
+            </MainStyled>
         </Container>
     )
 }
@@ -34,17 +33,10 @@ const Photo = styled.img`
     border-radius: 50%;
     object-fit: cover;
     background: ${({theme}) => theme.gradient.photoGradient};
-    padding: 10px;
+    padding: 0.625rem;
     z-index: 1;
 
 `
-
-const NameStyled = styled.span`
-    background: ${({theme}) => theme.gradient.nameGradient};
-    -webkit-background-clip: text;
-    color: transparent;
-`
-
 
 const PhotoBorder = styled.div`
     display: flex;
@@ -55,12 +47,12 @@ const PhotoBorder = styled.div`
 `
 
 const Square = styled.div<SquareProps>`
-    max-width: 444px;
-    max-height: 444px;
+    min-width: 444px;
+    min-height: 444px;
     position: absolute;
     background: transparent;
     transform: rotate(${props => props.$rotation}deg);
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     border-radius: 10px; /* Если нужны скруглённые углы */
     border-image: ${({theme}) => theme.gradient.squareGradient} 1; /* Градиент для рамки */
     box-sizing: border-box;

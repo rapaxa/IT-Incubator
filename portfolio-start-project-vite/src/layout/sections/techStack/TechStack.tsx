@@ -1,7 +1,8 @@
 import {SectionTitles} from "../../../components/SectionTitles.tsx";
-import {Container} from "../../../App.tsx";
 import {TechStackItems} from "./techStackItems/TechStackItems.tsx";
 import {FlexWrapperStyled} from "../../../components/FlexWrapper.tsx";
+import {Container} from "../../../components/Container.tsx";
+import {SectionSpan} from "../../../components/SectionSpan.tsx";
 
 
 const dataItems = [
@@ -88,7 +89,7 @@ export const TechStack = () => {
         <Container $justify="space-evenly" >
             <FlexWrapperStyled $flexD={"column"} >
             <SectionTitles >My Tech Stack</SectionTitles>
-            <span> Technologies I’ve been working with recently</span>
+            <SectionSpan> Technologies I’ve been working with recently</SectionSpan>
             </FlexWrapperStyled>
             <TechStackItems dataItems={dataItems}/>
         </Container>
