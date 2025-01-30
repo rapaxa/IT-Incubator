@@ -15,5 +15,5 @@ export const Profile = ({title, description}: AboutMePropsType) => {
         </StyledProfile>
     )
 }
-const StyledProfile = styled.div`
+const StyledProfile = styled.section`
 `
