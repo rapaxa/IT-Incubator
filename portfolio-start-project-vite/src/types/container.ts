@@ -4,4 +4,5 @@ export type ContainerPropsType = {
     wrap?:string;
     $justify?:string;
     $alightItems?:string;
+    $position?:string;
 }

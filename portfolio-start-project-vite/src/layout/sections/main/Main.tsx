@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import photo from "../../../assets/images/Photo.webp";
 import {SectionTitles} from "../../../components/SectionTitles.tsx";
-import {Container} from "../../../components/Container.tsx";
+import { SectionsWrapper} from "../../../components/Container.tsx";
 import {SquareProps} from "../../../types/styles/abstract/square.ts";
 import {StyledSpan} from "../../../components/StyledSpan.tsx";
 
 
 export const Main = () => {
     return (
-        <Container>
+        <SectionsWrapper>
             <MainStyled>
                 <SectionTitles as="h1">Hi 👋,<br/>My name is<br/>
                     <StyledSpan>Pavlo MG</StyledSpan>
@@ -23,7 +23,7 @@ export const Main = () => {
                     <Photo src={photo} alt=""/>
                 </PhotoBorder>
             </MainStyled>
-        </Container>
+        </SectionsWrapper>
     )
 }
 

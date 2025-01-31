@@ -1,4 +1,4 @@
-import {Container} from "../../../components/Container.tsx";
+import { SectionsWrapper} from "../../../components/Container.tsx";
 import {SectionTitles} from "../../../components/SectionTitles.tsx";
 import {SectionSpan} from "../../../components/SectionSpan.tsx";
 import styled from "styled-components";
@@ -63,7 +63,7 @@ const dataItems: projectsDataItemsType[] = [
 
 export const Projects = () => {
     return (
-        <Container>
+        <SectionsWrapper>
             <SectionTitles>Projects</SectionTitles>
             <SectionSpan>Things I’ve built so far</SectionSpan>
             <StyledListItems>
@@ -89,7 +89,7 @@ export const Projects = () => {
                     </StyledListItem>
                 ))}
             </StyledListItems>
-        </Container>
+        </SectionsWrapper>
     );
 };
 const Card = styled.div`

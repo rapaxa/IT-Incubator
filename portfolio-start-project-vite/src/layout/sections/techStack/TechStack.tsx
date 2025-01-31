@@ -1,7 +1,7 @@
 import {SectionTitles} from "../../../components/SectionTitles.tsx";
 import {TechStackItems} from "./techStackItems/TechStackItems.tsx";
 import {FlexWrapperStyled} from "../../../components/FlexWrapper.tsx";
-import {Container} from "../../../components/Container.tsx";
+import { SectionsWrapper} from "../../../components/Container.tsx";
 import {SectionSpan} from "../../../components/SectionSpan.tsx";
 
 
@@ -86,13 +86,13 @@ const dataItems = [
 
 export const TechStack = () => {
     return (
-        <Container $justify="space-evenly" >
+        <SectionsWrapper $justify="space-evenly" >
             <FlexWrapperStyled $flexD={"column"} >
             <SectionTitles >My Tech Stack</SectionTitles>
             <SectionSpan> Technologies I’ve been working with recently</SectionSpan>
             </FlexWrapperStyled>
             <TechStackItems dataItems={dataItems}/>
-        </Container>
+        </SectionsWrapper>
     );
 };
 
