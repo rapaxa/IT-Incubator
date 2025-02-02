@@ -1,16 +1,47 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-    ul li{
-        list-style: none;
+    * {
         padding: 0;
         margin: 0;
+        border: none;
     }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    a, a:link, a:visited  {
+        text-decoration: none;
+    }
+
+    a:hover  {
+        text-decoration: none;
+    }
+
+    h1, h2, h3, h4, h5, h6, p {
+        font-size: inherit;
+        font-weight: inherit;
+    }
+
+    ul, ul li {
+        list-style: none;
+    }
+
+    img {
+        vertical-align: top;
+    }
+
+    aside, nav, footer, header, section, main {
+        display: block;
+    }
+    
     body {
         font-family: 'Poppins', sans-serif;
-        max-width: 1240px;
-        margin: 0 auto;
-        width: 100%;
-        padding-top: 80px;
+        background: #eee;
+    }
+    a svg {
+        display: block;
     }
 `;

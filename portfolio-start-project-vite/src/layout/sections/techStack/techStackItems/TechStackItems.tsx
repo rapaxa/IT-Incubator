@@ -21,6 +21,7 @@ export const TechStackItems = ({dataItems}: { dataItems: TechStackItemPropsType[
 
 const StyledTechStackItems = styled.ul`
     display: flex;
+    margin-top: 20vh;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 7.25rem;

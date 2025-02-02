@@ -1,5 +1,6 @@
 import {ListOfItems} from "../../../../components/ListOfItems.tsx";
 import {SectionTitles} from "../../../../components/SectionTitles.tsx";
+import styled from "styled-components";
 
 const jobData = [
     {
@@ -27,10 +28,12 @@ const jobData = [
 
 export const WorkExperience = () => {
     return (
-        <>
+        <WrapperWorkExperience>
             <SectionTitles>Work Experience</SectionTitles>
             <ListOfItems data={jobData}/>
-        </>
+        </WrapperWorkExperience>
 
     )
 }
+const WrapperWorkExperience = styled.div`
+`

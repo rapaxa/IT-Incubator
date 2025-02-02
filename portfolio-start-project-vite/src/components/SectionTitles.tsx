@@ -10,6 +10,8 @@ export const SectionTitles = styled.h2`
       line-height: ${height || '3.25rem'};
       text-align: ${align || 'left'};
       color: ${color || '#42446E'};
+      margin:  38px 0;
+
     `;
 }}
 `;

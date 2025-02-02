@@ -5,16 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="963abe0c-5653-48ce-b32c-192b60722657" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/portfolio-start-project-vite/src/components/Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-start-project-vite/src/components/Container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-start-project-vite/src/components/icons/Icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-start-project-vite/src/components/icons/Icon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-start-project-vite/src/components/menu/Container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-start-project-vite/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-start-project-vite/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-start-project-vite/src/components/Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-start-project-vite/src/components/SectionsWrapper.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-start-project-vite/src/components/SectionSpan.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-start-project-vite/src/components/SectionSpan.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-start-project-vite/src/components/SectionText.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-start-project-vite/src/components/SectionText.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-start-project-vite/src/components/SectionTitles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-start-project-vite/src/components/SectionTitles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-start-project-vite/src/components/menu/SocialList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-start-project-vite/src/components/menu/SocialList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio-start-project-vite/src/layout/footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-start-project-vite/src/layout/footer/Footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio-start-project-vite/src/layout/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-start-project-vite/src/layout/header/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio-start-project-vite/src/layout/sections/aboutMe/InfoAboutMe.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-start-project-vite/src/layout/sections/aboutMe/InfoAboutMe.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-start-project-vite/src/layout/sections/aboutMe/infoAboutMeItems/WorkExperience.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-start-project-vite/src/layout/sections/aboutMe/infoAboutMeItems/WorkExperience.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio-start-project-vite/src/layout/sections/main/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-start-project-vite/src/layout/sections/main/Main.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio-start-project-vite/src/layout/sections/projects/Projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-start-project-vite/src/layout/sections/projects/Projects.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio-start-project-vite/src/layout/sections/techStack/TechStack.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-start-project-vite/src/layout/sections/techStack/TechStack.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-start-project-vite/src/types/container.ts" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-start-project-vite/src/types/container.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-start-project-vite/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-start-project-vite/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-start-project-vite/src/layout/sections/techStack/techStackItems/TechStackItems.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-start-project-vite/src/layout/sections/techStack/techStackItems/TechStackItems.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-start-project-vite/src/styles/GlobalStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-start-project-vite/src/styles/GlobalStyles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-start-project-vite/src/styles/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-start-project-vite/src/styles/theme.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738214236425</updated>
-      <workItem from="1738214237535" duration="34159000" />
+      <workItem from="1738214237535" duration="44905000" />
     </task>
     <servers />
   </component>

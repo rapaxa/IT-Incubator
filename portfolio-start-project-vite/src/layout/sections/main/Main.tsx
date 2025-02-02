@@ -1,28 +1,30 @@
 import styled from "styled-components";
 import photo from "../../../assets/images/Photo.webp";
 import {SectionTitles} from "../../../components/SectionTitles.tsx";
-import { SectionsWrapper} from "../../../components/Container.tsx";
+import { SectionsWrapper} from "../../../components/SectionsWrapper.tsx";
 import {SquareProps} from "../../../types/styles/abstract/square.ts";
 import {StyledSpan} from "../../../components/StyledSpan.tsx";
+import {Container} from "../../../components/menu/Container.tsx";
 
 
 export const Main = () => {
     return (
         <SectionsWrapper>
-            <MainStyled>
+            <Container >
                 <SectionTitles as="h1">Hi 👋,<br/>My name is<br/>
                     <StyledSpan>Pavlo MG</StyledSpan>
                     <br/>I'm web developer
                 </SectionTitles>
+
                 <PhotoBorder>
-                    <Square $rotation={10}/>
-                    <Square $rotation={20}/>
                     <Square $rotation={30}/>
-                    <Square $rotation={40}/>
-                    <Square $rotation={50}/>
+                    <Square $rotation={45}/>
+                    <Square $rotation={60}/>
+                    <Square $rotation={75}/>
+                    <Square $rotation={90}/>
                     <Photo src={photo} alt=""/>
                 </PhotoBorder>
-            </MainStyled>
+            </Container>
         </SectionsWrapper>
     )
 }
@@ -57,10 +59,4 @@ const Square = styled.div<SquareProps>`
     border-image: ${({theme}) => theme.gradient.squareGradient} 1; /* Градиент для рамки */
     box-sizing: border-box;
 `;
-const MainStyled = styled.div`
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-`
+

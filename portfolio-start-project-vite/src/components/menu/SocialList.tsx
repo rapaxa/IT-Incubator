@@ -29,7 +29,6 @@ const SocialListStyled = styled.ul`
     display: flex;
     gap: 1.25rem;
     list-style: none;
-    padding: 3.188rem;
     margin: 0;
 `;
 
