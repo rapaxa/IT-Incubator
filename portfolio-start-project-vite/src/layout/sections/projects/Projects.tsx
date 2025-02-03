@@ -1,4 +1,4 @@
-import {SectionsWrapper} from "../../../components/SectionsWrapper.tsx";
+import {SectionsWrapper} from "../../../components/SectionWrapper.tsx";
 import {SectionTitles} from "../../../components/SectionTitles.tsx";
 import {SectionSpan} from "../../../components/SectionSpan.tsx";
 import styled from "styled-components";
@@ -174,4 +174,5 @@ const StyledLink = styled.a`
     cursor: pointer;
     margin-left: 1.25rem; // 20px -> 1.25rem
     margin-right: 1.875rem; // 30px -> 1.875rem
+   
 `;

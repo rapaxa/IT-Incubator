@@ -39,6 +39,7 @@ const MenuList = styled.ul`
 
 const MenuItem = styled.li`
     text-align: center;
+    flex-wrap: wrap;
 `;
 
 const MenuLink = styled.a`

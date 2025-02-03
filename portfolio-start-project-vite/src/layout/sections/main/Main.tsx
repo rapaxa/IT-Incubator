@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import photo from "../../../assets/images/Photo.webp";
 import {SectionTitles} from "../../../components/SectionTitles.tsx";
-import { SectionsWrapper} from "../../../components/SectionsWrapper.tsx";
+import { SectionsWrapper} from "../../../components/SectionWrapper.tsx";
 import {SquareProps} from "../../../types/styles/abstract/square.ts";
 import {StyledSpan} from "../../../components/StyledSpan.tsx";
 import {Container} from "../../../components/menu/Container.tsx";
@@ -49,8 +49,10 @@ const PhotoBorder = styled.div`
 `
 
 const Square = styled.div<SquareProps>`
-    min-width: 444px;
-    min-height: 444px;
+    max-width: 444px;
+    width: 100%;
+    max-height: 444px;
+    height: 100%;
     position: absolute;
     background: transparent;
     transform: rotate(${props => props.$rotation}deg);
@@ -58,5 +60,6 @@ const Square = styled.div<SquareProps>`
     border-radius: 10px; /* Если нужны скруглённые углы */
     border-image: ${({theme}) => theme.gradient.squareGradient} 1; /* Градиент для рамки */
     box-sizing: border-box;
+    filter:blur(2px)
 `;
 

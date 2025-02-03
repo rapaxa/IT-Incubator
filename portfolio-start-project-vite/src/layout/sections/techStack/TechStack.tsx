@@ -1,6 +1,6 @@
 import {SectionTitles} from "../../../components/SectionTitles.tsx";
 import {TechStackItems} from "./techStackItems/TechStackItems.tsx";
-import {SectionsWrapper} from "../../../components/SectionsWrapper.tsx";
+import {SectionsWrapper} from "../../../components/SectionWrapper.tsx";
 import {SectionSpan} from "../../../components/SectionSpan.tsx";
 import {Container} from "../../../components/menu/Container.tsx";
 
@@ -41,7 +41,7 @@ const dataItems = [
         name: "bootstrap",
         width: "92",
         height: "105",
-        viewBox: "0 0 92 105",
+        viewBox: "0 10 90 80",
     },
     {
         name: "vsCode",
@@ -51,7 +51,7 @@ const dataItems = [
     },
 
     {
-        name: "vsCode",
+        name: "sass",
         width: "92",
         height: "105",
         viewBox: "0 0 92 105",
@@ -78,7 +78,7 @@ const dataItems = [
         name: "gitHub",
         width: "92",
         height: "105",
-        viewBox: "0 0 92 105",
+        viewBox: "0 0 85 85",
     },
 
 
@@ -87,7 +87,7 @@ const dataItems = [
 export const TechStack = () => {
     return (
         <SectionsWrapper>
-            <Container direction = {'column'}>
+            <Container direction={'column'}>
                 <SectionTitles>My Tech Stack</SectionTitles>
                 <SectionSpan> Technologies I’ve been working with recently</SectionSpan>
                 <TechStackItems dataItems={dataItems}/>

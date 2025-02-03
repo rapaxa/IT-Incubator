@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {StyledSpan} from "../../components/StyledSpan.tsx";
-import {SectionsWrapper} from "../../components/SectionsWrapper.tsx";
+import {SectionsWrapper} from "../../components/SectionWrapper.tsx";
 import {FlexWrapperStyled} from "../../components/FlexWrapper.tsx";
 import {SocialList} from "../../components/menu/SocialList.tsx";
 import {MenuLinks} from "../../components/menu/MenuLinks.tsx";

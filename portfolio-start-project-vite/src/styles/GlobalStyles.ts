@@ -39,7 +39,7 @@ export const GlobalStyles = createGlobalStyle`
     
     body {
         font-family: 'Poppins', sans-serif;
-        background: #eee;
+        background: white;
     }
     a svg {
         display: block;
