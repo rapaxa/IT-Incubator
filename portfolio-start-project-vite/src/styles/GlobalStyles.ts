@@ -12,11 +12,12 @@ export const GlobalStyles = createGlobalStyle`
     *::after {
         box-sizing: border-box;
     }
-    a, a:link, a:visited  {
+
+    a, a:link, a:visited {
         text-decoration: none;
     }
 
-    a:hover  {
+    a:hover {
         text-decoration: none;
     }
 
@@ -36,12 +37,15 @@ export const GlobalStyles = createGlobalStyle`
     aside, nav, footer, header, section, main {
         display: block;
     }
-    
+
     body {
         font-family: 'Poppins', sans-serif;
         background: white;
+        width: 100%;
     }
+
     a svg {
         display: block;
     }
+
 `;

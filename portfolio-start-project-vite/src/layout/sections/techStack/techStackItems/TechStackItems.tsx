@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {FlexWrapperStyled} from "../../../../components/FlexWrapper.tsx";
 import {Icon} from "../../../../components/icons/Icon.tsx";
 import {TechStackItemPropsType} from "../../../../types/techStack.ts";
+import {theme} from "../../../../styles/theme.ts";
 
 
 export const TechStackItems = ({dataItems}: { dataItems: TechStackItemPropsType[] }) => {
@@ -49,5 +50,8 @@ const StyledTechStackItem = styled.li`
         border-radius: 20px;
         filter: blur(0.4rem);
         z-index: -1;
+        @media ${theme.media.tablet} {
+            display: none;
+        }
     }
 `

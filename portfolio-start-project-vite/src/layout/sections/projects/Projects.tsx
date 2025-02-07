@@ -11,6 +11,7 @@ import imgSix from "../../../assets/images/Rectangle-14.webp";
 import {FlexWrapperStyled} from "../../../components/FlexWrapper.tsx";
 import {Icon} from "../../../components/icons/Icon.tsx";
 import {Container} from "../../../components/menu/Container.tsx";
+import {theme} from "../../../styles/theme.ts";
 
 
 type projectsDataItemsType = {
@@ -113,6 +114,11 @@ const StyledListItems = styled.ul`
     list-style: none;
     padding: 0;
     margin-top: 20vh;
+    @media ${theme.media.tablet} {
+        display: flex;
+        justify-content: space-around;
+
+    }
 `;
 
 const StyledListItemImg = styled.img`
@@ -140,6 +146,10 @@ const StyledListItem = styled.li`
         filter: blur(1.25rem); // 20px -> 1.25rem
         z-index: -1;
         border-radius: 1.25rem; // 20px -> 1.25rem
+        @media ${theme.media.tablet} {
+        display: none
+    }
+        
     }
 `;
 

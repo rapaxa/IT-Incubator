@@ -5,6 +5,7 @@ import { SectionsWrapper} from "../../../components/SectionWrapper.tsx";
 import {SquareProps} from "../../../types/styles/abstract/square.ts";
 import {StyledSpan} from "../../../components/StyledSpan.tsx";
 import {Container} from "../../../components/menu/Container.tsx";
+import {theme} from "../../../styles/theme.ts";
 
 
 export const Main = () => {
@@ -32,6 +33,7 @@ export const Main = () => {
 const Photo = styled.img`
     max-width: 350px;
     max-height: 350px;
+    width: 100%;
     border-radius: 50%;
     object-fit: cover;
     background: ${({theme}) => theme.gradient.photoGradient};
@@ -60,6 +62,9 @@ const Square = styled.div<SquareProps>`
     border-radius: 10px; /* Если нужны скруглённые углы */
     border-image: ${({theme}) => theme.gradient.squareGradient} 1; /* Градиент для рамки */
     box-sizing: border-box;
-    filter:blur(2px)
+    filter: blur(2px);
+    @media ${theme.media.tablet} {
+        display: none;
+    }
 `;
 

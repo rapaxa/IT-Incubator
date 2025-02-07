@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import {FlexWrapperStyled} from "../FlexWrapper.tsx";
+import {theme} from "../../styles/theme.ts";
 
 export const MenuLinks = () => {
     return (
-        <NavBar as={'nav'} $justifyC='space-between' $alignI='center'>
+        <NavBar as={'nav'} $justifyC='center' $alignI='center'>
             <MenuList>
                 <MenuItem>
                     <MenuLink href="">Home</MenuLink>
@@ -35,6 +36,11 @@ const MenuList = styled.ul`
     list-style: none;
     padding: 0;
     margin: 0;
+    @media ${theme.media.tablet }{
+        display: none;
+        
+        
+    }
 `;
 
 const MenuItem = styled.li`
