@@ -8,3 +8,9 @@ export type dataPropsType = {
     dates: string
     type: string
 }
+export type projectsDataItemsType = {
+    img: string,
+    title: string,
+    description: string,
+    note: string,
+}

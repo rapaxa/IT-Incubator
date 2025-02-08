@@ -1,9 +1,9 @@
 import {WorkExperience} from "./infoAboutMeItems/WorkExperience.tsx";
 import {Education} from "./infoAboutMeItems/Education.tsx";
 import {FlexWrapperStyled} from "../../../components/FlexWrapper.tsx";
-import {SectionsWrapper} from "../../../components/SectionWrapper.tsx";
-import {SectionTitles} from "../../../components/SectionTitles.tsx";
-import {SectionText} from "../../../components/SectionText.tsx";
+import {SectionsWrapper} from "../../../components/sectionItems/SectionWrapper.tsx";
+import {SectionTitles} from "../../../components/sectionItems/SectionTitles.tsx";
+import {SectionText} from "../../../components/sectionItems/SectionText.tsx";
 import {Container} from "../../../components/menu/Container.tsx";
 
 export const InfoAboutMe = () => {

@@ -1,5 +1,5 @@
 import {ListOfItems} from "../../../../components/ListOfItems.tsx";
-import {SectionTitles} from "../../../../components/SectionTitles.tsx";
+import {SectionTitles} from "../../../../components/sectionItems/SectionTitles.tsx";
 import styled from "styled-components";
 
 const jobData = [
